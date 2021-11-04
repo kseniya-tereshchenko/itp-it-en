@@ -1,0 +1,305 @@
+@import "partials/fonts";
+@import "partials/variables";
+
+.case-inner-wrp {
+  max-width: 1310px;
+  margin: 0 auto;
+}
+
+.case-inner-section {
+  padding: 80px 0 60px;
+}
+
+.smartq-bg-section {
+  background: $colorOrange;
+  position: relative;
+
+  h2 {
+    text-align: left;
+  }
+}
+
+.smartq-bg-section-padding {
+  padding-top: 20px;
+  padding-bottom: 70px;
+  margin: 65px auto;
+}
+
+.case-top-section {
+  padding: 50px 0 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+
+  h1 {
+    text-align: left;
+    font-size: 48px;
+    margin: 40px 0 20px;
+  }
+
+  p {
+    max-width: 600px;
+  }
+
+  .tags-block {
+    justify-content: flex-start;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+}
+
+.smartq-logo {
+  height: 132px;
+}
+
+.case-top-section-text-block {
+  max-width: 700px;
+}
+
+.smartq-top-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.smartq-steps-wrp {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 -30px;
+}
+
+.smartq-steps__item {
+  width: 25%;
+  padding: 0 30px;
+
+  &:nth-child(odd) {
+    padding-top: 75px;
+  }
+}
+
+.smartq-steps__circle {
+  background: $colorOrange;
+  border-radius: 50%;
+  width: 96px;
+  height: 96px;
+  color: #fff;
+  letter-spacing: -0.004em;
+  font-size: 23px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 96px;
+  margin-bottom: 15px;
+}
+
+.smartq-arrow-01 {
+  transform: translate(60px, -30px);
+  width: 173px;
+  height: 87px;
+}
+
+.smartq-arrow-02 {
+  transform: translate(60px, 30px);
+  width: 176px;
+  height: 88px;
+}
+
+.smartq-arrow-03 {
+  transform: translate(110px, -40px);
+  width: 161px;
+  height: 51px;
+}
+
+.screens-section {
+  overflow: hidden;
+
+  img {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.smartq-bottom-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .bottom-block__img-block {
+    width: 50%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+    }
+  }
+
+  .bottom-block__text-block {
+    padding-left: 60px;
+    padding-right: 30px;
+    width: 50%;
+  }
+}
+
+@media (max-width: 1330px) {
+
+  .smartq-top-image {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .case-top-section {
+    padding: 10px 0 35px;
+
+    h1 {
+      margin: 30px 0;
+    }
+
+    p {
+      max-width: 500px;
+    }
+
+    .tags-block {
+      max-width: 550px;
+    }
+  }
+
+  .smartq-arrow-03 {
+    transform: translate(60px,-40px);
+  }
+}
+
+@media (max-width: 991px) {
+
+  .main-wrp {
+    max-width: initial;
+  }
+
+  h2 {
+    font-size: 44px;
+    margin: 30px 0;
+  }
+
+  .smartq-logo {
+    height: 110px;
+  }
+
+  .case-top-section {
+
+    h1 {
+      font-size: 44px;
+    }
+
+    p {
+      max-width: 600px;
+    }
+
+    .tags-block {
+      max-width: 400px;
+    }
+  }
+
+  .case-inner-section {
+    padding: 40px 0 30px;
+  }
+
+  .smartq-steps__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .smartq-steps-wrp {
+    margin: 0 -10px;
+  }
+
+  .smartq-steps__item {
+    padding: 0 10px;
+  }
+
+  .smartq-arrow-01 {
+    transform: translate(11px, -30px);
+    width: 153px;
+  }
+
+  .smartq-arrow-02 {
+    transform: translate(8px, 17px);
+    width: 153px;
+  }
+
+  .smartq-arrow-03 {
+    transform: translate(18px, -40px);
+    width: 141px;
+  }
+
+  .smartq-bottom-block {
+    flex-wrap: wrap;
+
+    .bottom-block__img-block {
+      width: 100%;
+
+      img {
+        max-width: 450px;
+        position: static;
+        transform: translateY(-10vw);
+        margin: 0 auto -10vw;
+        display: block;
+      }
+    }
+
+    .bottom-block__text-block {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .smartq-steps-wrp {
+    margin: 0 -5px;
+  }
+
+  .smartq-steps__item {
+    padding: 0 5px;
+
+    &:nth-child(odd) {
+      padding-top: 45px;
+    }
+  }
+
+  .smartq-steps__circle {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+  }
+
+  .smartq-steps__text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .smartq-arrow-01 {
+    width: 100px;
+    height: 53px;
+    transform: translate(16px,-9px);
+  }
+
+  .smartq-arrow-02 {
+    width: 100px;
+    height: 53px;
+  }
+
+  .smartq-arrow-03 {
+    width: 100px;
+    height: 31px;
+    transform: translate(20px,-20px);
+  }
+}

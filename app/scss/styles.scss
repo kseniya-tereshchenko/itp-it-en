@@ -80,6 +80,15 @@ footer{
 
   path {
     stroke: $colorGray;
+    transition: ease-out .3s;
+    transform: translateX(-3px);
+  }
+
+  &:hover {
+
+    path {
+      transform: translateX(0);
+    }
   }
 }
 
@@ -369,55 +378,6 @@ h3 {
   font-weight: 400;
 }
 
-.smartq-wrp {
-  max-width: 1310px;
-  margin: 0 auto;
-}
-
-.smartq-top-section {
-  background: $colorOrange;
-  position: relative;
-}
-
-.case-top-section {
-  padding: 50px 0 85px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: relative;
-  z-index: 2;
-
-  h1 {
-    text-align: left;
-    font-size: 48px;
-    margin: 40px 0 20px;
-  }
-
-  p {
-    max-width: 600px;
-  }
-
-  .tags-block {
-    justify-content: flex-start;
-    max-width: 600px;
-    margin-top: 30px;
-  }
-}
-
-.smartq-logo {
-  height: 132px;
-}
-
-.case-top-section-text-block {
-  max-width: 700px;
-}
-
-.smartq-top-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 @media (max-width: 1500px) {
 
   header {
@@ -600,7 +560,7 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 
   .smartq {
 
