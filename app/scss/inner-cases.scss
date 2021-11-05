@@ -36,6 +36,7 @@
   h1 {
     text-align: left;
     font-size: 48px;
+    line-height: 65px;
     margin: 40px 0 20px;
   }
 
@@ -50,6 +51,31 @@
   }
 }
 
+.done4you-bg-section {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 38.82%, rgba(0, 0, 0, 0.2) 101.54%), #8CC544;;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+
+  .header-arrow {
+
+    path {
+      stroke: #fff;
+    }
+  }
+
+  .tags-block {
+    margin-top: 55px;
+  }
+
+  .top-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transform: translate(37%,28%) scale(0.8);
+  }
+}
+
 .smartq-logo {
   height: 132px;
   width: initial;
@@ -57,6 +83,8 @@
 
 .case-top-section-text-block {
   max-width: 700px;
+  position: relative;
+  z-index: 2;
 }
 
 .smartq-top-image {
@@ -148,6 +176,66 @@
     padding-right: 30px;
     width: 50%;
   }
+}
+
+.done4you-half-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  p {
+    max-width: 500px;
+  }
+}
+
+.done4you-half-section-revers {
+
+  .half-section__text-block {
+    padding: 0 30px 0 0;
+  }
+}
+
+.half-section__img {
+  width: 50%;
+  text-align: center;
+}
+
+.half-section__phone-01 {
+  transform: translateX(-30px);
+}
+
+.half-section__phone-02 {
+  transform: translateX(30px);
+}
+
+.half-section__phone-03 {
+  transform: translateX(23px);
+}
+
+.half-section__text-block {
+  width: 50%;
+  padding-left: 30px;
+
+  h3 {
+    margin-bottom: 30px;
+    max-width: 485px;
+  }
+}
+
+.half-section__circle {
+  border: 3px solid $colorGreen;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 45px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 @media (max-width: 1330px) {

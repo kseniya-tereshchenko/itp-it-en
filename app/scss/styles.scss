@@ -35,8 +35,8 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  //display: flex;
+  //flex-direction: column;
   height: 100%;
   font-size: 23px;
   font-family: 'Montserrat';
@@ -47,17 +47,17 @@ body {
 }
 
 header{
-  flex: 0 0 auto;
+  //flex: 0 0 auto;
   padding: 75px 0 50px;
 }
 
 main{
-  flex: 1 0 auto;
+  //flex: 1 0 auto;
   padding-bottom: 80px;
 }
 
 footer{
-  flex: 0 0 auto;
+  //flex: 0 0 auto;
   padding: 20px 0 120px;
 }
 
@@ -153,7 +153,7 @@ a {
 
 h3 {
   font-size: 48px;
-  line-height: 72px;
+  line-height: 65px;
   font-weight: 700;
   letter-spacing: -0.005em;
   color: $colorText;
@@ -181,7 +181,7 @@ h3 {
   margin: 0 5px 17px;
   border-radius: 8px;
   border: 1px solid #CCCCCC;
-  padding: 14px 16px;
+  padding: 6px 16px;
   text-align: center;
   font-size: 20px;
   line-height: 28px;
@@ -204,6 +204,12 @@ h3 {
   border-color: $colorGreen;
   background: $colorGreen;
   color: #fff;
+}
+
+.tags-block__item-green-white {
+  border-color:#fff;
+  background: #fff;
+  color:  $colorGreen;
 }
 
 .tags-block__item-red {
