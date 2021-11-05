@@ -52,6 +52,7 @@
 
 .smartq-logo {
   height: 132px;
+  width: initial;
 }
 
 .case-top-section-text-block {
@@ -62,6 +63,8 @@
   position: absolute;
   bottom: 0;
   right: 0;
+  width: 860px;
+  height: initial;
 }
 
 .smartq-steps-wrp {
@@ -131,11 +134,12 @@
     width: 50%;
     position: relative;
 
-    img {
+    svg {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
       width: 100%;
+      height: initial;
     }
   }
 
@@ -244,7 +248,7 @@
     .bottom-block__img-block {
       width: 100%;
 
-      img {
+      svg {
         max-width: 450px;
         position: static;
         transform: translateY(-10vw);
@@ -357,11 +361,11 @@
   }
 
   .smartq-steps__item-wrp {
-    margin: 0;
+    margin: 0 -2px;
   }
 
   .smartq-steps__item {
-    padding: 0;
+    padding: 0 2px;
   }
 
   .smartq-arrow-01 {
@@ -387,7 +391,7 @@
 
     .bottom-block__img-block {
 
-      img {
+      svg {
         transform: translateY(-15vw);
       }
     }
