@@ -1115,15 +1115,27 @@ header {
     left: 50%;
   }
 
+  .citi-bg-section {
+    margin-bottom: 550px;
+  }
+
   .citi-top-images-block {
     width: 100%;
     overflow: hidden;
     left: 0;
     margin: 0;
+    top: 75%;
   }
 
   .citi-image {
     transform: translateX(-115px) scale(.7);
+  }
+
+  .citi-top-images-block {
+
+    .tags-block {
+      left: 300px;
+    }
   }
 
   .citi-phone-01 {
@@ -1168,6 +1180,21 @@ header {
       img {
         transform: translateY(-24%) translateX(-19%) scale(.8);
       }
+    }
+  }
+
+  .citi-phone-01 {
+    transform: translateX(-25px) scale(1);
+  }
+
+  .citi-phone-02 {
+    transform: translateX(-25px) scale(1);
+  }
+
+  .citi-inner-section__center {
+
+    p {
+      text-align: center;
     }
   }
 }
@@ -1251,6 +1278,27 @@ header {
 
   .half-section__phone-03 {
     transform: translateX(-49.5%)
+  }
+
+  .citi-screen-03 {
+    margin: -15vw auto -80px;
+  }
+
+  .citi-bg-section {
+    margin-bottom: 110vw;
+  }
+
+  .citi-image {
+    transform: translateX(0) scale(1);
+    width: 80%;
+  }
+
+  .citi-top-images-block {
+    top: 105%;
+
+    .tags-block {
+      left: 55%;
+    }
   }
 }
 
