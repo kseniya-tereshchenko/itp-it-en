@@ -12,7 +12,7 @@ header {
 }
 
 .case-inner-wrp {
-  max-width: 1310px;
+  max-width: 1370px;
   margin: 0 auto;
 }
 
@@ -240,26 +240,71 @@ header {
 .half-section__img {
   width: 50%;
   text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.half-section__wrp {
+  position: relative;
 }
 
 .half-section__phone-00 {
-  transform: translateX(-70px);
+  //transform: translateX(-70px);
   height: 862px;
+  position: relative;
+  z-index: 2;
+}
+
+.half-section__circle-00 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .half-section__phone-01 {
-  transform: translateX(-32px);
+  //transform: translateX(-48px);
   height: 862px;
+  display: block;
+  z-index: 2;
+  position: relative;
+}
+
+.half-section__circle-01 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .half-section__phone-02 {
-  transform: translateX(30px);
+  //transform: translateX(30px);
   height: 862px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.half-section__circle-02 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .half-section__phone-03 {
-  transform: translateX(23px);
+  //transform: translateX(23px);
   height: 862px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.half-section__circle-03 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .half-section__text-block {
@@ -285,6 +330,8 @@ header {
 
 .done4you-bottom-img {
   width: 1262px;
+  display: block;
+  margin: 0 auto;
 }
 
 .citi-bg-section {
@@ -645,19 +692,19 @@ header {
   }
 
   .half-section__phone-00 {
-    transform: translateX(-138px);
+    //transform: translateX(-138px);
   }
 
   .half-section__phone-01 {
-    transform: translateX(-85px);
+    //transform: translateX(-85px);
   }
 
   .half-section__phone-02 {
-    transform: translateX(-70px);
+    //transform: translateX(-70px);
   }
 
   .half-section__phone-03 {
-    transform: translateX(-78px);
+    //transform: translateX(-78px);
   }
 
   .citi-bg-section {
@@ -829,17 +876,17 @@ header {
 
   .half-section__phone-01 {
     height: 862px;
-    transform: translateX(20px);
+    //transform: translateX(20px);
   }
 
   .half-section__phone-02 {
     height: 862px;
-    transform: translateX(40px);
+    //transform: translateX(40px);
   }
 
   .half-section__phone-03 {
     height: 862px;
-    transform: translateX(10px);
+    //transform: translateX(10px);
   }
 
   .half-section__text-block {
@@ -1098,21 +1145,25 @@ header {
   }
 
   .half-section__phone-01 {
-    transform: translateX(-50%);
+    //transform: translateX(-50%);
     position: relative;
     left: 50%;
   }
 
   .half-section__phone-02 {
-    transform: translateX(-44.5%);
+    //transform: translateX(-44.5%);
     position: relative;
-    left: 50%;
+    //left: 50%;
   }
 
   .half-section__phone-03 {
-    transform: translateX(-48.5%);
+    //transform: translateX(-48.5%);
     position: relative;
-    left: 50%;
+    //left: 50%;
+  }
+
+  .done4you-bottom-img {
+    transform: translateX(1%);
   }
 
   .citi-bg-section {
@@ -1268,16 +1319,16 @@ header {
     line-height: 48px;
   }
 
-  .half-section__phone-01 {
-    transform: translateX(-48%);
-  }
-
   .half-section__phone-02, .half-section__phone-01, .half-section__phone-03, .half-section__phone-00 {
     height: 620px;
   }
 
+  .half-section__circle-00, .half-section__circle-01, .half-section__circle-02, .half-section__circle-03 {
+    width: 430px;
+  }
+
   .half-section__phone-03 {
-    transform: translateX(-49.5%)
+    //transform: translateX(-49.5%)
   }
 
   .citi-screen-03 {
@@ -1298,7 +1349,21 @@ header {
 
     .tags-block {
       left: 55%;
+      top: 20px;
+      transform: none;
     }
+  }
+
+  .citi-phone-01 {
+    transform: translateX(-8px);
+  }
+
+  .citi-phone-02 {
+    transform: translateX(-8px);
+  }
+
+  .citi-phone-04 {
+    transform: translateX(25px);
   }
 }
 
@@ -1330,5 +1395,27 @@ header {
     width: 60px;
     height: 19px;
     transform: translate(15px,-10px);
+  }
+
+  .citi-top-images-block {
+    padding-bottom: 40px;
+
+    .tags-block {
+      left: 53%;
+    }
+
+    .tags-block__item{
+      font-size: 12px;
+      padding: 1px 7px;
+    }
+  }
+
+  .marketplace-block {
+    flex-direction: column;
+    align-items: flex-start;
+
+    img:first-child {
+      margin: 0 0 20px;
+    }
   }
 }
