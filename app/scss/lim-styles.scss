@@ -83,7 +83,7 @@ header .main-wrp {
   }
 
   &:nth-child(2) {
-    margin-bottom: -150px;
+    margin-bottom: -146px;
 
     &:before {
       top: -150px;
@@ -106,8 +106,10 @@ header .main-wrp {
 
   &:nth-last-child(2) {
     height: initial;
-    display: flex;
-    align-items: flex-end;
+
+    .top-part {
+      height: 150px;
+    }
 
     &:before {
       display: none;
@@ -156,17 +158,19 @@ header .main-wrp {
 
 .phone-wrp {
   position: relative;
+  width: 427px;
+  margin: 0 auto;
 
   .shadow {
     position: absolute;
     top: 0;
-    left: -35px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 .lim-phone {
   width: 427px;
-  margin: 0 auto;
   display: block;
   position: relative;
   z-index: 2;
@@ -243,6 +247,14 @@ header .main-wrp {
         top: 0;
       }
     }
+
+    &:nth-last-child(2) {
+      padding-top: 0;
+
+      .top-part {
+        height: 0;
+      }
+    }
   }
 
   .phone-wrp {
@@ -268,6 +280,7 @@ header .main-wrp {
   }
 
   .phone-wrp {
+    width: 305px;
 
     .shadow {
       width: 485px;
