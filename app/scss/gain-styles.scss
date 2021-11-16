@@ -37,6 +37,10 @@
   top: -95px;
   left: 50%;
   transform: translateX(-35%);
+
+  .gain-phone-00 {
+    width: 772px;
+  }
 }
 
 .case-top-section-text-block {
@@ -240,7 +244,7 @@
 
   .image-block__img-wrp {
 
-    svg {
+    .gain-phone-00 {
       width: 680px;
       min-width: 680px;
     }
@@ -320,11 +324,11 @@
     position: static;
     transform: none;
     overflow: hidden;
-    margin: -80px -30px 0;
+    margin: 0 -30px;
     display: flex;
     justify-content: center;
 
-    svg {
+    .gain-phone-00 {
       transform: translateX(100px);
     }
   }
@@ -427,9 +431,8 @@
 @media (max-width: 480px) {
 
   .image-block__img-wrp {
-    margin-top: -180px;
 
-    svg {
+    .gain-phone-00 {
       width: 550px;
       min-width: 550px;
       transform: translateX(78px);
