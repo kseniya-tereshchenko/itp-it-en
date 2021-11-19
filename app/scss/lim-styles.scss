@@ -1,6 +1,10 @@
 @import "partials/fonts";
 @import "partials/variables";
 
+.logotype {
+  margin-bottom: -2px;
+}
+
 main {
   overflow: visible;
 
@@ -118,6 +122,7 @@ header .main-wrp {
     .lim-section__text-block {
       padding-top: 0;
       padding-bottom: 0;
+      position: relative;
     }
   }
 
@@ -132,17 +137,67 @@ header .main-wrp {
     position: relative;
     margin: 0 0 23px;
 
-    &:before {
-      content: " ";
-      width: 61px;
-      height: 1px;
-      border-bottom: 11px dotted $colorYellow;
-      position: absolute;
-      top: 29px;
-      left: -80px;
-      transform: translateY(-50%);
+    //&:before {
+    //  content: " ";
+    //  width: 61px;
+    //  height: 1px;
+    //  border-bottom: 11px dotted $colorYellow;
+    //  position: absolute;
+    //  top: 29px;
+    //  left: -80px;
+    //  transform: translateY(-50%);
+    //}
+  }
+}
+
+.lim-section__circle-block {
+  display: flex;
+  position: absolute;
+  top: 25px;
+  left: -80px;
+  width: 62px;
+  justify-content: space-between;
+
+  .circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: $colorYellow;
+    display: block;
+    transition: ease-out .3s;
+  }
+
+  &.lim-circle-animate {
+
+    .circle {
+      animation: lim-circle .8s;
+      animation-timing-function: ease-out;
+
+      &:nth-child(2){
+        animation-delay: .2s;
+      }
+
+      &:nth-child(3){
+        animation-delay: .4s;
+      }
+
     }
   }
+}
+
+@keyframes lim-circle {
+
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.7);
+    background: #f2ba24;
+  }
+  to {
+    transform: scale(1);
+  }
+
 }
 
 .lim-title {
@@ -178,6 +233,7 @@ header .main-wrp {
 
 .lim-section__text-block {
   padding: 60px 30px 115px 117px;
+  position: relative;
 }
 
 @media (max-width: 1500px) {
