@@ -19,9 +19,6 @@ $(document).ready(function () {
 
         });
 
-        // var offsetTop0 = $elementCase0.offset().top + 244,
-        //     offsetTop1 = $elementCase1.offset().top + 244;
-
     });
 
 });
