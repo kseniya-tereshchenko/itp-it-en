@@ -354,11 +354,15 @@ header .main-wrp {
 
 @media (max-width: 400px) {
 
+  .lim-section__circle-block {
+    display: none;
+  }
+
   .lim-title {
 
     svg {
-      width: 100px;
-      height: 70px;
+      width: 72px;
+      height: 60px;
     }
 
     h1 {
@@ -372,11 +376,27 @@ header .main-wrp {
 
   .lim-section {
 
+    &:before {
+      height: 525px!important;
+    }
+
     h2 {
 
       &:before {
         display: none;
       }
     }
+  }
+
+  .phone-wrp {
+    width: 255px;
+
+    .shadow {
+      width: 404px;
+    }
+  }
+
+  .lim-phone {
+    width: 255px;
   }
 }
