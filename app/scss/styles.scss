@@ -288,6 +288,7 @@ h3 {
 
 .tiles-block__img-block {
   position: relative;
+  min-height: 310px;
 
   > img {
     width: 100%;
@@ -657,6 +658,10 @@ header {
 }
 
 @media (max-width: 991px) {
+
+  .tiles-block__img-block {
+    min-height: 195px;
+  }
 
   .tiles-block__item-wrp {
     width: 100%;
