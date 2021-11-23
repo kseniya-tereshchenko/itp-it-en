@@ -72,23 +72,21 @@ footer{
 .header-arrow {
   width: 35px;
   height: 35px;
-
-  path {
-    stroke: $colorGray;
-    transition: ease-out .3s;
-    transform: translateX(-3px);
-  }
+  stroke: $colorGray;
+  transition: ease-out .3s;
+  transform: translateX(-3px);
 
   &:hover {
-
-    path {
-      transform: translateX(0);
-    }
+    transform: translateX(0);
   }
 }
 
 .header-arrow-left {
-  transform: rotate(180deg);
+  transform: rotate(180deg) translateX(-3px);
+
+  &:hover {
+    transform: rotate(180deg) translateX(0);
+  }
 }
 
 .header-arrow-link {
@@ -257,16 +255,23 @@ h3 {
   justify-content: space-between;
   align-items: center;
 
-  path {
+  svg {
     transition: ease-out .3s;
     transform: translateX(-3px);
   }
 
+  path {
+    transition: ease-out .3s;
+  }
+
   &:hover {
+
+    svg {
+      transform: translateX(0);
+    }
 
     path  {
       stroke: $colorGreen;
-      transform: translateX(0);
     }
   }
 
