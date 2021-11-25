@@ -1,0 +1,28 @@
+# This is an example Starter pipeline configuration
+# Use a skeleton to build, test and deploy using manual and parallel steps
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: atlassian/default-image:2
+
+pipelines:
+  branches:
+    development:
+    - step:
+        name: 'Deployment to Dev'
+        script:
+          - pipe: atlassian/ftp-deploy:0.3.7
+            variables:
+              USER: $FTP_USER
+              PASSWORD: $FTP_PASS
+              SERVER: $FTP_SERVER
+              REMOTE_PATH: '/www/dev.anthill-it.com'
+    master:
+    - step:
+        name: 'Deployment to Production'
+        script:
+          - pipe: atlassian/ftp-deploy:0.3.7
+            variables:
+              USER: $FTP_USER
+              PASSWORD: $FTP_PASS
+              SERVER: $FTP_SERVER
+              REMOTE_PATH: '/www/anthill-it.com'
