@@ -60,6 +60,30 @@ time, mark, audio, video{
   min-height: 100vh;
   padding: 30px;
   flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.bg-spots{
+  background: url(../image/bg_anthill_green.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: auto;
+  height: 100%;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.bg-spots-right {
+  right: 0;
+  bottom: 0;
+}
+
+.bg-spots-left {
+  left: 0;
+  top: 0;
+  transform: rotate(180deg);
 }
 
 html, body {
@@ -79,12 +103,16 @@ html, body {
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 
 .logotype {
   margin-bottom: 30px;
   width: 69px;
   height: 61px;
+  position: relative;
+  z-index: 2;
 }
 
 .copyright {
@@ -93,4 +121,6 @@ html, body {
   line-height: 40px;
   margin: 0;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
