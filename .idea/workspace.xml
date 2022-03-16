@@ -2,32 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fa702839-fc24-4fe3-803a-472b0eccc1e4" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/unthill-design.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bitbucket-pipelines.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/favicon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/inter/InterRegular.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/inter/InterRegular.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/inter/InterRegular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/inter/InterRegular.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/inter/InterRegular.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/montserrat/MontserratBold.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/montserrat/MontserratBold.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/montserrat/MontserratBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/montserrat/MontserratBold.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/fonts/montserrat/MontserratBold.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/formManager.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/bg_anthill_green.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/image/bg_green_anthill.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logo-mid-black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logo-mid.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/logo-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/style/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web.config" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -114,12 +89,12 @@
       <option name="presentableId" value="Default" />
       <updated>1637829296612</updated>
       <workItem from="1637829297892" duration="725000" />
-      <workItem from="1647414731572" duration="1587000" />
+      <workItem from="1647414731572" duration="2019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2312000" />
+    <option name="totallyTimeSpent" value="2744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />

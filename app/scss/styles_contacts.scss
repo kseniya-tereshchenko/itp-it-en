@@ -55,7 +55,8 @@
 }
 
 .contact_inner_wrp {
-    padding-right: 60px;
+    padding-top: 150px;
+    padding-left: 50px;
 }
 
 .contacts-block {
@@ -136,7 +137,15 @@
     }
 }
 
+.contact-us-inner {
+    padding-top: 0;
+}
+
 @media (max-width: 1650px) {
+
+    .contact_inner_wrp {
+        padding-left: 40px;
+    }
 
     .contacts-block_contact-text {
         padding: 40px;
@@ -160,6 +169,8 @@
 
     .contact_inner_wrp {
         padding-right: 30px;
+        padding-left: 30px;
+        padding-top: 110px;
     }
 
     .contact-text_item {
@@ -235,6 +246,10 @@
     .contact-text_item {
         margin: 0;
     }
+
+    .contact-us-info {
+        width: 55%;
+    }
 }
 
 @media (max-width: 767px) {
@@ -264,5 +279,12 @@
     .contact-text_title {
         font-size: 20px;
         margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .contact-us-info {
+        width: 100%;
     }
 }

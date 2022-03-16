@@ -4,22 +4,23 @@ $(document).ready(function () {
 
     var overlay = $('.overlay'),
         header_logo = $('.header-logo'),
-        header_menu = $('.header-nav-block'),
+        header_menu = $('.header-nav-mobile'),
         mobileMenuIcon = $('.mobile-menu-icon'),
         body = $('body'),
         header = $('header'),
         startScroll = false;
 
-    $('#input_phone').inputmask("+7 (999) 999-99-99");
+    $('#input_phone').inputmask("+9 (999) 999-99-99");
 
     mobileMenuIcon.click(function () {
 
         $(this).toggleClass('active');
         overlay.toggleClass('active');
-        header_logo.toggleClass('active');
+        // header_logo.toggleClass('active');
         header_menu.toggleClass('active');
+        header_menu.slideToggle(300);
         body.toggleClass('not-scroll');
-        header.toggleClass('active');
+        // header.toggleClass('active');
 
     });
 
@@ -27,10 +28,11 @@ $(document).ready(function () {
 
         $(this).toggleClass('active');
         mobileMenuIcon.toggleClass('active');
-        header_logo.toggleClass('active');
+        // header_logo.toggleClass('active');
         header_menu.toggleClass('active');
+        header_menu.slideToggle(300);
         body.toggleClass('not-scroll');
-        header.toggleClass('active');
+        // header.toggleClass('active');
 
     });
 
