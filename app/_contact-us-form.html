@@ -1,0 +1,61 @@
+  @@if (mainPage === true) {
+    <div class="fullpage-item__img contact-us-image">
+  }
+
+  @@if (mainPage === false) {
+      <div class="contact-us-image">
+  }
+     <img src="images/full_metal_bird.png" alt="Contact us" data-src="images/full_metal_bird.png"/>
+  </div>
+
+  @@if (mainPage === true) {
+      <form id="contactForm" class="fullpage-item__text-block contact-us-info">
+  }
+
+  @@if (mainPage === false) {
+        <form id="contactForm" class="contact-us-info">
+  }
+
+    <h2>
+      We are willing to&nbsp;learn about your project!
+    </h2>
+    <div class="contact-us-info-client">
+      <div class="main-form__item-input">
+        <label class="main-form__label" for="input_name">
+          Name
+        </label>
+        <input class="main-form__input" id="input_name" name="name" type="text">
+      </div>
+
+      <div class="main-form__item-input">
+        <label class="main-form__label" for="input_phone">
+          Phone
+        </label>
+        <input class="main-form__input" id="input_phone" name="phone" type="text">
+      </div>
+      <div class="main-form__item-input">
+        <label class="main-form__label" for="input_email">
+          E-mail
+        </label>
+        <input class="main-form__input" id="input_email" name="email" type="text">
+      </div>
+    </div>
+    <div class="main-form__item-textarea">
+      <label class="main-form__label" for="main-form_textarea">
+        Tasks for us
+      </label>
+      <textarea id="main-form_textarea" class="main-form__textarea" name="text"></textarea>
+    </div>
+    <p class="contact-us-info-link">By submitting the&nbsp;form you agree to&nbsp;<a class="link-blue" href="privacy.html" target="_blank">the&nbsp;data processing policy</a>. </p>
+    <div class="contact-us-info-buttons">
+      <button class="btn btn_blue btn_form">
+        send <span>request</span>
+      </button>
+      <div class="contact-us-info-buttons-staple">
+        <input name="file" type="file" id="attach-file" name="file">
+        <label for="attach-file">
+          <img src="images/staple.svg" alt="staple icon" /> attach file
+        </label>
+      </div>
+    </div>
+  </form>

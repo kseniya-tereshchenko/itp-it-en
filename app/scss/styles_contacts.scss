@@ -1,0 +1,268 @@
+@import "partials/variables";
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/gilroybold.eot');
+    src: url('../fonts/Gilroy/gilroybold.eot') format('embedded-opentype'),
+    url('../fonts/Gilroy/gilroybold.woff2') format('woff2'),
+    url('../fonts/Gilroy/gilroybold.woff') format('woff'),
+    url('../fonts/Gilroy/gilroybold.ttf') format('truetype'),
+    url('../fonts/Gilroy/gilroybold.svg#gilroybold') format('svg');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/gilroysemibold.eot');
+    src: url('../fonts/Gilroy/gilroysemibold.eot') format('embedded-opentype'),
+    url('../fonts/Gilroy/gilroysemibold.woff2') format('woff2'),
+    url('../fonts/Gilroy/gilroysemibold.woff') format('woff'),
+    url('../fonts/Gilroy/gilroysemibold.ttf') format('truetype'),
+    url('../fonts/Gilroy/gilroysemibold.svg#gilroysemibold') format('svg');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/gilroymedium.eot');
+    src: url('../fonts/Gilroy/gilroymedium.eot') format('embedded-opentype'),
+    url('../fonts/Gilroy/gilroymedium.woff2') format('woff2'),
+    url('../fonts/Gilroy/gilroymedium.woff') format('woff'),
+    url('../fonts/Gilroy/gilroymedium.ttf') format('truetype'),
+    url('../fonts/Gilroy/gilroymedium.svg#gilroymedium') format('svg');
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../fonts/Gilroy/GilroyRegular.eot');
+    src: url('../fonts/Gilroy/GilroyRegular.eot') format('embedded-opentype'),
+    url('../fonts/Gilroy/GilroyRegular.woff2') format('woff2'),
+    url('../fonts/Gilroy/GilroyRegular.woff') format('woff'),
+    url('../fonts/Gilroy/GilroyRegular.ttf') format('truetype'),
+    url('../fonts/Gilroy/GilroyRegular.svg#gilroymedium') format('svg');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'DMMono';
+    src: url('../fonts/DMMono/DMMonoRegular.eot');
+    src: url('../fonts/DMMono/DMMonoRegular.eot') format('embedded-opentype'),
+    url('../fonts/DMMono/DMMonoRegular.woff2') format('woff2'),
+    url('../fonts/DMMono/DMMonoRegular.woff') format('woff'),
+    url('../fonts/DMMono/DMMonoRegular.ttf') format('truetype'),
+    url('../fonts/DMMono/DMMonoRegular.svg#DMMonoRegular') format('svg');
+    font-weight: 400;
+}
+
+.contact_inner_wrp {
+    padding-right: 60px;
+}
+
+.contacts-block {
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+}
+
+.contacts-block_contact-text {
+    border-radius: 12px;
+    background: $colorText;
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 35%;
+}
+
+.contacts-block_map {
+    border-radius: 12px;
+    background: #eee;
+    width: 60%;
+    overflow: hidden;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.contact-text_title {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 122%;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+.contact-text_item {
+    margin-bottom: 80px;
+
+    &:last-child {
+        margin: 0;
+    }
+}
+
+.contact-text_text {
+    font-size: 18px;
+    line-height: 152%;
+    font-weight: 300;
+    margin: 0;
+
+    a {
+        color: $colorBlue;
+
+        &:hover {
+            color: $colorBlueHover;
+        }
+
+        &:active {
+            color: $colorBlueActive;
+        }
+    }
+}
+
+.contact-text_text-social {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+
+    .contact-text_link {
+        margin-right: 40px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
+
+@media (max-width: 1650px) {
+
+    .contacts-block_contact-text {
+        padding: 40px;
+    }
+
+    .contact_inner_wrp {
+        padding-right: 40px;
+    }
+
+    .contact-text_item {
+        margin-bottom: 60px;
+    }
+
+    .contact-text_title {
+        font-size: 28px;
+    }
+
+}
+
+@media (max-width: 1500px) {
+
+    .contact_inner_wrp {
+        padding-right: 30px;
+    }
+
+    .contact-text_item {
+        margin-bottom: 40px;
+    }
+
+    .contact-text_title {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .contact-text_text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #fp-nav.fp-left {
+        display: none;
+    }
+
+    .contact_inner_wrp {
+        padding-left: 30px;
+    }
+
+    .contact-text_title {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .contact-text_text {
+        font-size: 14px;
+    }
+
+    .contacts-block_map {
+        width: 62%;
+    }
+
+}
+
+@media (max-width: 991px) {
+
+    .contacts-block {
+        flex-direction: column;
+        height: initial;
+    }
+
+    .contacts-block_map {
+        width: 100%;
+        height: 70vh;
+        margin-bottom: 50px;
+    }
+
+    .contacts-block_contact-text {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact-text_text {
+        flex-direction: column;
+    }
+
+    .contact-text_text-social {
+
+        .contact-text_link {
+            margin: 0;
+        }
+    }
+
+    .contact-text_item {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .contact_inner_wrp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .contacts-block_map {
+        margin-bottom: 30px;
+    }
+
+    .contacts-block_contact-text {
+        flex-direction: column;
+        padding: 30px 25px;
+    }
+
+    .contact-text_item {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    .contact-text_title {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+}
