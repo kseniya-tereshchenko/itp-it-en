@@ -10,8 +10,6 @@ $(document).ready(function () {
         header = $('header'),
         startScroll = false;
 
-    $('#input_phone').inputmask("+9 (999) 999-99-99");
-
     mobileMenuIcon.click(function () {
 
         $(this).toggleClass('active');

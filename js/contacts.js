@@ -9,28 +9,4 @@ $(document).ready(function() {
     if($(window).scrollTop() == 0) {
         $menuItem0.addClass('active');
     }
-
-    $(window).scroll(function() {
-
-        var scroll = $(window).scrollTop() + $(window).height();
-
-
-        var offsetTop0 = $elementCase0.offset().top,
-            offsetTop1 = $elementCase1.offset().top + 300;
-
-
-        if (scroll > offsetTop0 && scroll < offsetTop1) {
-
-            if (!$menuItem0.hasClass("active")) {
-                $allMenuItems.removeClass("active");
-                $menuItem0.addClass("active");
-            }
-
-        }  else {
-
-            $allMenuItems.removeClass("active");
-            $menuItem1.addClass("active");
-
-        }
-    });
 });
