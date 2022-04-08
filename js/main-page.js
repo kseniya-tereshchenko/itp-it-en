@@ -21,7 +21,7 @@ $(document).ready(function() {
         $('#fullpage').fullpage({
             navigation: true,
             navigationPosition: 'left',
-            navigationTooltips: ['About us', 'Services', 'Our workflow', 'Cases', 'Feedback', 'Contact us'],
+            navigationTooltips: ['About us', 'Services', 'Development', 'Cases', 'Feedback', 'Contact us'],
             lazyLoading: true,
             fitToSection: false,
             onLeave: function(origin, destination, direction){
@@ -171,16 +171,16 @@ $(document).ready(function() {
 
             if (currentCase == 1) {
                 caseImageUrl = 'images/cases_first.png';
-                caseImageAlt = 'Digitalizating & Automating Business';
+                caseImageAlt = 'Digital Transformation';
             } else if (currentCase == 2) {
                 caseImageUrl = 'images/cases_second.png';
-                caseImageAlt = 'Outsourcing an IT Department';
+                caseImageAlt = 'Outsourcing Services';
             } else if (currentCase == 3) {
                 caseImageUrl = 'images/cases_third.png';
-                caseImageAlt = 'Augmenting In-house Teams';
+                caseImageAlt = 'In-house Teams Augmentation';
             } else if (currentCase == 4) {
                 caseImageUrl = 'images/cases_fourth.png';
-                caseImageAlt = 'Launching pioneer IT products';
+                caseImageAlt = 'Startup Development';
             }
 
             openItem.removeClass('open');
@@ -222,12 +222,12 @@ $(document).ready(function() {
         } else if (currentStep == 2) {
 
             stepImageUrl = 'images/process_second_step.png';
-            stepImageAlt = 'Designing the engine'
+            stepImageAlt = 'Drawing the blueprints'
 
         } else if (currentStep == 3) {
 
             stepImageUrl = 'images/process_third_step.png';
-            stepImageAlt = 'System under construction'
+            stepImageAlt = 'Development'
 
         } else if (currentStep == 4) {
 

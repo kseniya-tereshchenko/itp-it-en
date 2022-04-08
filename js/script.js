@@ -71,7 +71,7 @@ $(document).ready(function () {
 
                 if (sectionService.hasClass("service-item-block")) {
 
-                    scrollTop = sectionService.offset().top - 100;
+                    scrollTop = sectionService.offset().top - 30;
 
                 } else if (sectionService.hasClass("js-contact-us_scroll")) {
                     scrollTop = sectionService.offset().top - 50;

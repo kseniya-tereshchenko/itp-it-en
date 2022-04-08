@@ -1592,6 +1592,7 @@ label.invalid {
 }
 
 .privacy-ul {
+    line-height: 152%;
 
     li:not(:last-child) {
         margin-bottom: 7px;
@@ -2355,7 +2356,7 @@ label.invalid {
         margin-bottom: 15px;
     }
 
-    p {
+    p, .privacy-ul {
         font-size: 16px;
     }
 
